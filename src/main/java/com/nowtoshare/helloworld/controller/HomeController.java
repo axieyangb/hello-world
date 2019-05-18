@@ -2,15 +2,16 @@ package com.nowtoshare.helloworld.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 public class HomeController {
-  @RequestMapping("hello")
+  @RequestMapping("/hello")
   public String hello() {
     return "Hello World";
   }
 
-  @RequestMapping("alive")
+  @RequestMapping("/alive")
   public String alive() {
     return "OK";
   }
