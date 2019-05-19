@@ -7,7 +7,7 @@ namespace: playground
 
 image:
   repository: axieyangb/hello-world
-  tag: stable
+  tag: latest
   pullPolicy: Always
 
 nameOverride: ""
