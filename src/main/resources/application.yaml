@@ -6,3 +6,7 @@ management:
       exposure:
         include:
           - health
+spring:
+  data:
+    mongodb:
+      uri: mongodb://${mongodb.user}:${mongodb.password}@mongodb.database:27017/hello-world

@@ -36,6 +36,8 @@ spec:
             httpGet:
               path: /actuator/health
               port: 8080
+          env:
+          {{- toYaml .Values.environments | nindent 12 }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}

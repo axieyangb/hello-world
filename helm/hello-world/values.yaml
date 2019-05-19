@@ -48,3 +48,15 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+environments:
+  - name: mongodb.user
+    valueFrom:
+      secretKeyRef:
+        name: hello-world
+        key: mongodb-user
+  - name: mongodb.password
+    valueFrom:
+      secretKeyRef:
+        name: hello-world
+        key: mongodb-password
