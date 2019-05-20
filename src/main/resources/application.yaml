@@ -9,8 +9,9 @@ management:
 spring:
   data:
     mongodb:
-      host: ${MONGO_DB_ADDRESS}
-      port: 27017
-      username: ${MONGO_DB_USER}
-      password: ${MONGO_DB_PASSWORD}
-      database: hello-world
+#      host: ${MONGO_DB_ADDRESS}
+#      port: 27017
+#      username: ${MONGO_DB_USER}
+#      password: ${MONGO_DB_PASSWORD}
+#      database: hello-world
+      uri: mongodb://${MONGO_DB_ADDRESS}:27017/${MONGO_DB_NAME}

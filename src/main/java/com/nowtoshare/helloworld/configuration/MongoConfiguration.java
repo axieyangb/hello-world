@@ -15,18 +15,17 @@ import java.util.Arrays;
 @Configuration
 public class MongoConfiguration {
 
-    @Value("${spring.data.mongodb.username}")
+    @Value("${MONGO_DB_USER}")
     private String mongoUser;
 
-    @Value("${spring.data.mongodb.password}")
+    @Value("${MONGO_DB_PASSWORD}")
     private String mongoPass;
 
-    @Value("${spring.data.mongodb.database}")
+    @Value("${MONGO_DB_NAME}")
     private String databaseName;
 
-    @Value("${spring.data.mongodb.port}")
-    private String mongoPort;
-    @Value("${spring.data.mongodb.host}")
+    private final String mongoPort ="27017";
+    @Value("${MONGO_DB_ADDRESS}")
     private String mongoHost;
 
     @Bean

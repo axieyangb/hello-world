@@ -50,13 +50,13 @@ tolerations: []
 affinity: {}
 
 environments:
-  - name: MONGO_DB_USER
-    valueFrom:
-      secretKeyRef:
-        name: hello-world
-        key: mongodb-user
-  - name: MONGO_DB_PASSWORD
-    valueFrom:
-      secretKeyRef:
-        name: hello-world
-        key: mongodb-password
+#  - name: MONGO_DB_USER
+#    valueFrom:
+#      secretKeyRef:
+#        name: hello-world
+#        key: mongodb-user
+#  - name: MONGO_DB_PASSWORD
+#    valueFrom:
+#      secretKeyRef:
+#        name: hello-world
+#        key: mongodb-password
