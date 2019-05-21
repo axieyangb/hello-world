@@ -20,7 +20,7 @@ public class HomeController {
   }
   @RequestMapping("/hello")
   public String hello() {
-    return "Hello World, yangyang xie & luye";
+    return "Hello World, PANDB 2.0";
   }
 
   @RequestMapping("/alive")
