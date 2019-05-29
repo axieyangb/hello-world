@@ -20,7 +20,7 @@ public class HomeController {
   }
   @RequestMapping("/hello")
   public String hello() {
-    return "Hello World, PANDB 3.0";
+    return "Hello World, PANDB 4.0";
   }
 
   @RequestMapping("/alive")
